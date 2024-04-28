@@ -11,7 +11,9 @@ import {
   IonCardHeader,
   IonCardTitle,
 } from '@ionic/react';
-import { pulseOutline, calculatorOutline } from 'ionicons/icons';
+
+//Ionic Icons
+import { speedometerOutline,calculator,pencil} from 'ionicons/icons';
 import { useHistory } from 'react-router-dom';
 
 const Home: React.FC = () => {
@@ -44,7 +46,7 @@ const Home: React.FC = () => {
             <IonCard id="card1" onClick={goToClickCounter} style={{ width: '350px', cursor: 'pointer' }}>
               <IonCardContent style={{ height: '70px', fontSize: '30px', display: 'flex', alignItems: 'center', padding: 0 }}>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px', flex: '20%', backgroundColor: 'var(--ion-color-light)', padding: 0 }}>
-                  <IonIcon icon={pulseOutline} slot="start" />
+                  <IonIcon icon={speedometerOutline} slot="start" />
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px', flex: '80%', backgroundColor: 'var(--ion-color-primary)', color: 'white', padding: 0 }}>
                   Click Counter
@@ -55,7 +57,7 @@ const Home: React.FC = () => {
             <IonCard id="card2" onClick={goToCalculator} style={{ width: '350px', cursor: 'pointer' }}>
               <IonCardContent style={{ height: '70px', fontSize: '30px', display: 'flex', alignItems: 'center', padding: 0 }}>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px', flex: '20%', backgroundColor: 'var(--ion-color-light)', padding: 0 }}>
-                  <IonIcon icon={calculatorOutline} slot="start" />
+                  <IonIcon icon={calculator} slot="start" />
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px', flex: '80%', backgroundColor: 'var(--ion-color-secondary)', color: 'white', padding: 0 }}>
                   Calculator
@@ -64,13 +66,13 @@ const Home: React.FC = () => {
             </IonCard>
 
             
-            <IonCard id="card2" style={{ width: '350px', cursor: 'pointer' }}>
+            <IonCard id="card3" onClick={goToTodolist} style={{ width: '350px', cursor: 'pointer' }}>
               <IonCardContent style={{ height: '70px', fontSize: '30px', display: 'flex', alignItems: 'center', padding: 0 }}>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px', flex: '20%', backgroundColor: 'var(--ion-color-light)', padding: 0 }}>
-                    <IonIcon slot="start" />
+                    <IonIcon icon={pencil} slot="start" />
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px', flex: '80%', backgroundColor: 'var(--ion-color-success)', color: 'white', padding: 0 }}>
-                  
+                  Todo list
                 </div>
               </IonCardContent>
             </IonCard>

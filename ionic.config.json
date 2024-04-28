@@ -1,0 +1,7 @@
+{
+  "name": "ion-t-sy",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

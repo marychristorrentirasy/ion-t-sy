@@ -29,7 +29,7 @@ import {
 import './Home.css';
 
 //Ionic Icons
-import { speedometerOutline,calculator,pencil, chatbubble} from 'ionicons/icons';
+import { speedometerOutline,calculator,pencil, chatbubble, readerOutline} from 'ionicons/icons';
 
 //Additional Routes
 // import Click_counter from './Click_counter';
@@ -58,8 +58,14 @@ const cardData = [
     icon: chatbubble,
     subtitle: 'Applet #4',
     link: '/quotesgenerator'
-  }
+  },
   
+  {
+    title: 'Notes',
+    icon: readerOutline,
+    subtitle: 'Applet #5',
+    link: '/Notes'
+  }
 ];
 
   const Home: React.FC = () => {

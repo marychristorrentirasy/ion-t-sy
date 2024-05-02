@@ -85,7 +85,7 @@ const Notes: React.FC = () => {
       } else {
         const currentDate = new Date().toISOString(); 
         addNoteToast('middle');
-        await addDoc(collection(db, 'Notes'), {
+        await addDoc(collection(db, 'notes'), {
           title: newTitle,
           description: newDescription,
           dateAdded: currentDate
@@ -98,7 +98,7 @@ const Notes: React.FC = () => {
 
   //Read Firebase Data
   useEffect(() => {
-    const unsubscribe = onSnapshot(collection(db, 'Notes'), (snapshot) => {
+    const unsubscribe = onSnapshot(collection(db, 'notes'), (snapshot) => {
       readNotes(snapshot.docs.map(doc => ({
         id: doc.id, // Include the id property
         description: doc.data().description,
@@ -122,7 +122,7 @@ const updateNote = async () => {
   if (editIndex !== null) {
     editNoteToast('middle');
     const noteToUpdate = notes[editIndex];
-    await updateDoc(doc(db, 'Notes', noteToUpdate.id), {
+    await updateDoc(doc(db, 'notes', noteToUpdate.id), {
       title: newTitle,
       description: newDescription,
     });
@@ -143,7 +143,7 @@ const deleteNote = async (index: number) => {
   deleteNoteToast('middle');
   const noteToDelete = notes[index];
   // Delete note from Firestore
-  await deleteDoc(doc(db, 'Notes', noteToDelete.id));
+  await deleteDoc(doc(db, 'notes', noteToDelete.id));
 };
 
   return (

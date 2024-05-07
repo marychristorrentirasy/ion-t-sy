@@ -63,20 +63,20 @@ const App: React.FC = () => (
           </Route>
 
 
-          <Route exact path="/">
-            <Redirect to="/home" />
+          <Route exact path="/ion-t-sy/">
+            <Redirect to="/ion-t-sy/home" />
           </Route>
-          <Route exact path="/home">
+          <Route exact path="/ion-t-sy/home">
             <Home />
           </Route>
-          <Route exact path="/profile">
+          <Route exact path="/ion-t-sy/profile">
             <Profile />
           </Route>
 
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
 
-          <IonTabButton tab="home" href="/home">
+          <IonTabButton tab="home" href="/ion-t-sy/home">
             <IonIcon aria-hidden="true" icon={home} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
@@ -96,11 +96,11 @@ const App: React.FC = () => (
           </IonTabButton>
           */}
 
-          <IonTabButton tab="" href="">
+          <IonTabButton tab="" href="/ion-t-sy/home">
             <IonIcon aria-hidden="true" />
             <IonLabel></IonLabel>
           </IonTabButton>
-          <IonTabButton tab="profile" href="/profile">
+          <IonTabButton tab="profile" href="/ion-t-sy/profile">
             <IonIcon aria-hidden="true" icon={personCircleOutline} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>

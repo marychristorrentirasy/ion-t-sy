@@ -39,32 +39,32 @@ const cardData = [
     title: 'Click Counter',
     icon: speedometerOutline,
     subtitle: 'Applet #1',
-    link: '/clickcounter'
+    link: '/ion-t-sy/Home/Clickcounter'
   },
   {
     title: 'Calculator',
     icon: calculator,
     subtitle: 'Applet #2',
-    link: '/calculator'
+    link: '/ion-t-sy/Home/Calculator'
   },
   {
     title: 'To Do List',
     icon: pencil,
     subtitle: 'Applet #3',
-    link: '/todolist'
+    link: '/ion-t-sy/Home/Todolist'
   },
   {
     title: 'Quotes Generator',
     icon: chatbubble,
     subtitle: 'Applet #4',
-    link: '/quotesgenerator'
+    link: '/ion-t-sy/Home/Quotesgenerator'
   },
   
   {
     title: 'Notes',
     icon: readerOutline,
     subtitle: 'Applet #5',
-    link: '/Notes'
+    link: '/ion-t-sy/Home/Notes'
   }
 ];
 
@@ -96,7 +96,7 @@ const cardData = [
           {cardData
             .filter((card) => card.title.toLowerCase().includes(searchTerm.toLowerCase()))
             .map((card, index) => (
-              <IonCard key={index} href={card.link}>
+              <IonCard key={index} routerLink={card.link} routerDirection='forward'>
                 <IonCardHeader>
                   <IonCardTitle>
                     <IonGrid>

@@ -45,26 +45,26 @@ const cardData = [
     title: 'Calculator',
     icon: calculator,
     subtitle: 'Applet #2',
-    link: '/ion-t-sy/Home/Calculator'
+    link: '/calculator'
   },
   {
     title: 'To Do List',
     icon: pencil,
     subtitle: 'Applet #3',
-    link: '/ion-t-sy/Home/Todolist'
+    link: '/todolist'
   },
   {
     title: 'Quotes Generator',
     icon: chatbubble,
     subtitle: 'Applet #4',
-    link: '/ion-t-sy/Home/Quotesgenerator'
+    link: '/quotesgenerator'
   },
   
   {
     title: 'Notes',
     icon: readerOutline,
     subtitle: 'Applet #5',
-    link: '/ion-t-sy/Home/Notes'
+    link: '/Notes'
   }
 ];
 

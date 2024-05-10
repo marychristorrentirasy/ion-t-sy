@@ -46,19 +46,25 @@ const App: React.FC = () => (
       <IonTabs>
         <IonRouterOutlet>
           
-          <Route exact path="/clickcounter">
+        <Route exact path="/ion-t-sy/">
+            <Redirect to="/ion-t-sy/Home" />
+          </Route>
+          <Route exact path="/ion-t-sy/Home">
+          </Route>
+          
+          <Route exact path="/ion-t-sy/Home/clickcounter">
             <ClickCounter />
           </Route>
-          <Route exact path="/calculator">
+          <Route exact path="/ion-t-sy/Home/calculator">
             <Calculator />
           </Route>
-          <Route exact path="/todolist">
+          <Route exact path="/ion-t-sy/Home/todolist">
             <Todolist />
           </Route>
-          <Route exact path="/quotesgenerator">
+          <Route exact path="/ion-t-sy/Home/quotesgenerator">
             <QuotesGenerator />
           </Route>
-          <Route exact path="/notes">
+          <Route exact path="/ion-t-sy/Home/notes">
             <Notes />
           </Route>
 
